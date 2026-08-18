@@ -131,10 +131,35 @@
             
             <div class="flex items-center gap-6">
                 <a href="mailto:hello@atlanorholdings.com" class="hover:text-[#38BDF8] transition-colors">hello@atlanorholdings.com</a>
-                <span>&copy; 2026 Atlanor Holdings L.L.C. All rights reserved.</span>
+                <button onclick="document.getElementById('privacy-modal').classList.remove('hidden')" class="hover:text-slate-300 transition-colors">Privacy Policy</button>
+                <button onclick="document.getElementById('legal-modal').classList.remove('hidden')" class="hover:text-slate-300 transition-colors">Legal Notice</button>
             </div>
         </div>
     </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-modal" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+        <div class="bg-[#111827] border border-slate-800 p-6 rounded-2xl max-w-lg w-full text-slate-300 text-xs leading-relaxed relative">
+            <h3 class="text-white text-base font-bold mb-4">Privacy Policy</h3>
+            <p class="mb-3">Atlanor Holdings L.L.C. ("we", "our") respects your privacy. This website is hosted as a static informational page.</p>
+            <p class="mb-3"><strong>Data Collection:</strong> We do not set tracking cookies, store personal user data, or use third-party analytics services on this website.</p>
+            <p class="mb-4"><strong>Server Logs:</strong> When accessing our website, technical log data (such as IP address, browser type) may be automatically processed by our web hosting infrastructure solely to ensure system security and stability.</p>
+            <button onclick="document.getElementById('privacy-modal').classList.add('hidden')" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-500 transition-all">Close</button>
+        </div>
+    </div>
+
+    <!-- Legal Notice Modal -->
+    <div id="legal-modal" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+        <div class="bg-[#111827] border border-slate-800 p-6 rounded-2xl max-w-lg w-full text-slate-300 text-xs leading-relaxed relative">
+            <h3 class="text-white text-base font-bold mb-4">Legal Notice & Disclosure</h3>
+            <p class="mb-2"><strong>Company Name:</strong> Atlanor Holdings L.L.C.</p>
+            <p class="mb-2"><strong>Entity Type:</strong> Limited Liability Company (Wyoming, USA)</p>
+            <p class="mb-2"><strong>Principal Address:</strong> 30 N Gould St Ste N, Sheridan, WY 82801, USA</p>
+            <p class="mb-4"><strong>Contact:</strong> hello@atlanorholdings.com</p>
+            <p class="mb-4 text-slate-500">Represented by its Managing Members. Atlanor Holdings L.L.C. operates exclusively as a private holding company managing internal software, technology, and venture assets.</p>
+            <button onclick="document.getElementById('legal-modal').classList.add('hidden')" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-500 transition-all">Close</button>
+        </div>
+    </div>
 
 </body>
 </html>
